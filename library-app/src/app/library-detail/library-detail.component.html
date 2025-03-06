@@ -1,0 +1,11 @@
+<mat-card *ngIf="book" class="detail-card">
+  <mat-card-header>
+    <mat-card-title>Детали книги</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p><strong>Название:</strong> {{ book.title }}</p>
+    <p><strong>Год первого издания:</strong> {{ book.first_publish_year }}</p>
+    <p><strong>Количество изданий:</strong> {{ book.edition_count }}</p>
+    <p><strong>Авторы:</strong> <span *ngFor="let name of book.author_name"> {{ name }}</span></p>
+  </mat-card-content>
+</mat-card>
