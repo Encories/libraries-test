@@ -7,7 +7,7 @@
     <button mat-raised-button color="primary" (click)="searchBooks()">Найти</button>
   </div>
 
-  <app-library-detail *ngIf="selectedBook" [book]="selectedBook"></app-library-detail>
+  <app-book-detail *ngIf="selectedBook" [book]="selectedBook"></app-book-detail>
 
   <table mat-table [dataSource]="books" class="mat-elevation-z8">
     <ng-container matColumnDef="title">

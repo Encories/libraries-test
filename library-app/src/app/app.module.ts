@@ -10,15 +10,15 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LibraryListComponent } from './library-list/library-list.component';
-import { LibraryDetailComponent } from './library-detail/library-detail.component';
+import { BooksListComponent } from './book-list/books-list.component';
+import { BookDetailComponent } from './book-detail/book-detail.component';
 import { ApiService } from './services/api.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LibraryListComponent,
-    LibraryDetailComponent
+    BooksListComponent,
+    BookDetailComponent
   ],
   imports: [
     BrowserModule,

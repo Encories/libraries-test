@@ -3,11 +3,11 @@ import { IBookDetails } from '../interfaces/book-details.interface';
 import { ApiService } from '../services/api.service';
 
 @Component({
-  selector: 'app-library-list',
-  templateUrl: './library-list.component.html',
-  styleUrls: ['./library-list.component.scss']
+  selector: 'app-books-list',
+  templateUrl: './books-list.component.html',
+  styleUrls: ['./books-list.component.scss']
 })
-export class LibraryListComponent {
+export class BooksListComponent {
 
   public searchTerm: string = '';
   public books: IBookDetails[] = [];
